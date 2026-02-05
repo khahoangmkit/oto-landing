@@ -799,6 +799,13 @@
   display: flex;
 }
 
+.flexCol {
+  flex-direction: column;
+}
+
+.cardTitle {
+  align-items: center;
+}
 .imgBlock {
   display: block;
   width: 100%;
@@ -892,7 +899,7 @@
 
 .demandTop {
   display: grid;
-  grid-template-columns: 420px 1fr;
+  grid-template-columns: 580px 1fr;
   gap: 22px;
   align-items: center;
   margin-bottom: 22px;
@@ -900,14 +907,13 @@
 
 .demandText {
   display: grid;
+  width: 583px;
   gap: 10px;
+  padding-left: 60px;
 }
 
 .demandIllustration {
-  border-radius: 22px;
-  height: 260px;
-  background: linear-gradient(135deg, rgba(0, 86, 170, 0.14), rgba(0, 86, 170, 0.03));
-  border: 1px solid rgba(0, 86, 170, 0.16);
+  padding-left: 160px;
   position: relative;
   overflow: hidden;
 }
@@ -937,11 +943,14 @@
 }
 
 .liquidityBlock {
-  margin-top: 10px;
+  margin: 10px auto;
+  padding-top: 80px;
+  width: fit-content;
+
 }
 
 .compareGrid {
-  margin-top: 18px;
+  margin-top: 34px;
   display: grid;
   grid-template-columns: 1fr 40px 1fr;
   gap: 18px;
@@ -968,9 +977,10 @@
 }
 
 .miniCard {
+  display: flex;
   border-radius: 14px;
   padding: 12px 14px;
-  background: rgba(255, 255, 255, 0.65);
+  background: #fff;
   border: 1px solid rgba(0, 86, 170, 0.16);
   min-width: 140px;
   text-align: center;
@@ -978,18 +988,15 @@
 
 .miniCard__value {
   font-weight: 950;
-  font-size: 26px;
+  font-size: 64px;
+  line-height: 60px;
   color: #0056AA;
   margin: 0;
 }
 
-.carPh {
-  height: 140px;
-  width: min(360px, 100%);
-}
-
 .smallNote {
-  margin-top: 14px;
+  margin: 14px auto;
+  width: 1005px;
   color: rgba(0, 86, 170, 0.74);
 }
 
