@@ -295,7 +295,6 @@
 
 .ph {
   border-radius: 16px;
-  height: 100%;
 }
 
 .g1 { grid-column: 1; grid-row: 1; }
@@ -373,6 +372,8 @@
 .expertQuote {
   display: grid;
   gap: 10px;
+  width: 625px;
+  padding-left: 200px;
 }
 
 .scriptTitle--center {
@@ -674,8 +675,14 @@
 }
 
 .marketContext__text {
-  display: grid;
+  display: flex;
+
   gap: 10px;
+}
+
+.contentBoiCanh {
+  width: 624px;
+  padding-left: 24px;
 }
 
 .marketKicker {
@@ -693,32 +700,28 @@
   color: rgba(0, 86, 170, 0.98);
 }
 
-.vennBox {
-  height: 300px;
-  border-radius: 24px;
-}
-
 .vennCaption {
-  margin-top: 8px;
+  margin: 8px auto;
+  width: 530px;
   text-align: center;
-  font-weight: 800;
-  color: rgba(0, 86, 170, 0.7);
+  font-weight: 500;
+  color: #000;
 }
 
 .coverageGrid {
-  display: grid;
-  grid-template-columns: 520px 1fr;
-  gap: 26px;
+  display: flex;
+  gap: 60px;
+  padding-left: 112px;
   align-items: start;
 }
 
 .coverageMap {
-  height: 420px;
   border-radius: 24px;
 }
 
 .coverageText {
   display: grid;
+  width: 591px;
   gap: 10px;
 }
 
@@ -752,63 +755,56 @@
 }
 
 .interestGrid {
-  display: grid;
-  grid-template-columns: 1.2fr 0.8fr;
+  display: flex;
   gap: 18px;
+  padding-left: 65px;
   align-items: start;
 }
-
+.chartTitle {
+  font-size: 21px;
+  width: fit-content;
+  margin: 0 auto;
+  font-weight: 500;
+}
 .interestChart {
-  height: 220px;
   border-radius: 18px;
   position: relative;
 }
 
 .chartLabel {
-  position: absolute;
-  top: 16px;
-  left: 16px;
-  font-weight: 700;
+  font-weight: 500;
+  margin: 0 auto;
+  width: 199px;
   color: rgba(0, 86, 170, 0.8);
 }
 
 .chartSource {
-  margin-top: 8px;
-  font-size: 12px;
-  color: rgba(0, 86, 170, 0.6);
+  width: fit-content;
+  font-size: 16px;
+  margin: 8px auto;
 }
 
 .interestText {
   display: grid;
+  width: 521px;
   gap: 10px;
 }
 
 .interestPhotos {
-  width: 100%;
-  max-width: 1440px;
-  margin: 18px auto 0;
-  padding: 0 24px;
-  display: grid;
-  grid-template-columns: repeat(2, minmax(0, 1fr));
+  display: flex;
   gap: 12px;
 }
 
+.displayFlex {
+  display: flex;
+}
+
+.imgBlock {
+  display: block;
+  width: 100%;
+}
 .interestPhotos__item {
   height: 220px;
-}
-
-.sellerCollage {
-  width: 100%;
-  display: grid;
-  grid-template-columns: repeat(2, minmax(0, 1fr));
-  gap: 10px;
-  padding: 0 24px;
-  max-width: 1440px;
-  margin: 0 auto 18px;
-}
-
-.sellerCollage__img {
-  height: 200px;
 }
 
 .sellerIntro {
@@ -820,13 +816,14 @@
 
 .sellerGrid {
   display: grid;
-  grid-template-columns: 320px 1fr;
+  grid-template-columns: 599px 1fr;
   gap: 22px;
   align-items: start;
 }
 
 .sellerStats {
   display: grid;
+  padding-left: 136px;
   gap: 12px;
 }
 
@@ -852,11 +849,18 @@
 
 .sellerText {
   display: grid;
+  width: 694px;
   gap: 10px;
 }
 
+.sellerTextFullWidth {
+  width: 1200px;
+  margin: 0 auto;
+}
+
 .sellerQuote {
-  margin-top: 18px;
+  max-width: 1200px;
+  margin-top: 36px;
   display: grid;
   grid-template-columns: 1fr 320px;
   gap: 18px;
@@ -866,8 +870,6 @@
 .sellerSpeaker {
   border-radius: 22px;
   overflow: hidden;
-  border: 1px solid rgba(0, 86, 170, 0.16);
-  background: rgba(255, 255, 255, 0.65);
 }
 
 .sellerSpeaker__photo {
@@ -882,11 +884,10 @@
 }
 
 .quoteBox {
-  padding: 18px;
+  padding-left: 170px;
+  width: 572px;
   border-radius: 14px;
   color: rgba(255, 255, 255, 0.92);
-  background: linear-gradient(135deg, rgba(0, 86, 170, 0.92), rgba(0, 120, 200, 0.75));
-  box-shadow: 0 14px 40px rgba(0, 38, 73, 0.2);
 }
 
 .demandTop {

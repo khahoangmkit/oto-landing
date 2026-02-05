@@ -1,4 +1,10 @@
 import Reveal from '../components/Reveal'
+import interestTitle from '../assets/quyet-tam-title.png'
+import lineChart from '../assets/line-chart.png'
+import img1 from '../assets/img-3-1.png'
+import img2 from '../assets/img-3-2.png'
+import img3 from '../assets/img-3-3.png'
+import img4 from '../assets/img-3-4.png'
 
 export default function InterestSection() {
   return (
@@ -6,18 +12,18 @@ export default function InterestSection() {
       <div className="container1440">
         <div className="interestHeader">
           <Reveal>
-            <p className="interestKicker">Mức độ quan tâm</p>
-          </Reveal>
-          <Reveal delay={100}>
-            <h2 className="bigTitle">CỦA NGƯỜI DÙNG VỚI GEELY</h2>
+            <img src={interestTitle} alt="interest title"/>
           </Reveal>
         </div>
 
         <div className="interestGrid">
           <Reveal delay={150}>
-            <div className="interestChart ph">
-              {/* Placeholder for search trend chart */}
-              <p className="chartLabel">Lượt tìm kiếm 2025</p>
+            <p className="chartTitle">
+              <strong>Lượt tìm kiếm các từ khóa về "geely" trên Oto.com.vn</strong>
+            </p>
+
+            <div className="interestChart">
+              <img src={lineChart} alt="luot tim kiem chart"/>
             </div>
             <p className="chartSource">Nguồn: Ads.google.com</p>
           </Reveal>
@@ -25,31 +31,31 @@ export default function InterestSection() {
           <div className="interestText">
             <Reveal delay={200}>
               <p className="paragraph">
-                <strong>Lượt tìm kiếm các từ khóa về "geely" trên Oto.com.vn</strong>
+                Theo oto.com.vn điều này được minh chứng thông qua các con số có liên quan. Từ tháng 6-12/2025 lượng
+                người liên hệ và tìm kiếm liên quan đến từ khóa Geely tăng <strong>3,2</strong> lần so với 6 tháng đầu
+                năm. <br/><br/>
               </p>
             </Reveal>
             <Reveal delay={250}>
               <p className="paragraph">
-                Theo oto.com.vn điều này được minh chứng thông qua các con số có liên quan. Từ tháng 6-12/2025 lượng người liên hệ và tìm kiếm liên quan đến từ khóa Geely tăng <strong>3,2</strong> lần so với 6 tháng đầu năm.
-              </p>
-            </Reveal>
-            <Reveal delay={300}>
-              <p className="paragraph">
-                Điều quan trọng khác, theo website này lượng người nay phân bổ điều khắp Bắc - Trung - Nam đặc biệt tại 25 tỉnh thành mà HTAT đi qua, cho thấy mức độ quan tâm và tin tưởng của người dùng thông qua hành trình gia tăng đáng kể
+                Điều quan trọng khác, theo website này lượng người nay phân bổ điều khắp Bắc - Trung - Nam đặc biệt tại
+                25 tỉnh thành mà HTAT đi qua, cho thấy mức độ quan tâm và tin tưởng của người dùng thông qua hành trình
+                gia tăng đáng kể
               </p>
             </Reveal>
           </div>
         </div>
+        <div className="listImageBlock">
+          <img src={img1} alt="image 2 "/>
+          <img src={img2} alt="image 3 "/>
+        </div>
+
+        <div className="listImageBlock">
+          <img src={img3} alt="image 2 "/>
+          <img src={img4} alt="image 3 "/>
+        </div>
       </div>
 
-      <div className="interestPhotos">
-        <Reveal delay={350}>
-          <div className="ph interestPhotos__item"></div>
-        </Reveal>
-        <Reveal delay={400}>
-          <div className="ph interestPhotos__item"></div>
-        </Reveal>
-      </div>
     </section>
   )
 }

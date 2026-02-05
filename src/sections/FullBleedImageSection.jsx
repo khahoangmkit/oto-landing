@@ -1,12 +1,10 @@
-import Reveal from '../components/Reveal'
+import bannerNui from '../assets/banner2.png'
 
-export default function FullBleedImageSection({ height = 520, className = '' }) {
+export default function FullBleedImageSection() {
   return (
-    <Reveal>
-      <div 
-        className={`fullBleed ${className}`} 
-        style={{ '--fb-height': `${height}px` }}
-      ></div>
-    </Reveal>
+
+    <section className="hero">
+      <img src={bannerNui} style={{ width: '100%'}} alt="Banner Nui"/>
+    </section>
   )
 }

@@ -26,7 +26,7 @@ function App() {
         <CompanionOtoSection />
         <SummarySection />
         <ExpertMKTAltSection />
-        <FullBleedImageSection height={560} className="fullBleed--road" />
+        <FullBleedImageSection />
         <MarketContextSection />
         <CoverageSection />
         <InterestSection />

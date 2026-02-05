@@ -1,4 +1,7 @@
 import Reveal from '../components/Reveal'
+import avt2 from '../assets/avt2.png'
+import titleMKT from '../assets/title-MKT.png'
+
 
 export default function ExpertMKTAltSection() {
   return (
@@ -6,9 +9,11 @@ export default function ExpertMKTAltSection() {
       <div className="container1440">
         <div className="expertAltGrid">
           <div className="expertAltContent">
-            <Reveal>
-              <p className="scriptTitle">Chuyên gia MKT</p>
-            </Reveal>
+            <div className="contentCenter">
+              <Reveal>
+                <img src={titleMKT} alt="Chuyên gia MKT"/>
+              </Reveal>
+            </div>
             <Reveal delay={100}>
               <div className="expertQuote">
                 <p className="paragraph">
@@ -18,19 +23,14 @@ export default function ExpertMKTAltSection() {
                   Xe là tài sản lớn với người Việt, nên niềm tin vào hậu mãi và cam kết thương hiệu là yếu tố sống còn.
                 </p>
                 <p className="paragraph">
-                  Chiến dịch này cho thấy không chỉ chất lượng xe, mà còn năng lực vận hành và hệ sinh thái của doanh nghiệp."
+                  Chiến dịch này cho thấy không chỉ chất lượng xe, mà còn năng lực vận hành và hệ sinh thái của doanh
+                  nghiệp."
                 </p>
               </div>
             </Reveal>
           </div>
-
           <Reveal delay={150}>
-            <div className="expertCard expertCard--alt">
-              <div className="expertPhoto"></div>
-              <div className="expertTag expertTag--small">
-                <p className="expertName">Trần Việt Anh</p>
-              </div>
-            </div>
+            <img src={avt2} alt="Avatar Chuyên gia MKT"/>
           </Reveal>
         </div>
       </div>
