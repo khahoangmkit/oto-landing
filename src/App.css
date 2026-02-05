@@ -223,7 +223,8 @@
   margin: 0;
   line-height: 36px;
   text-align: justify;
-  color: rgba(0, 86, 170, 0.82);
+  color: #0056AA;
+  padding-bottom: 12px;
 }
 
 .paragraph-white {
@@ -973,6 +974,7 @@
 .compareLabel {
   font-weight: 900;
   letter-spacing: 0.06em;
+  margin: 0;
   color: rgba(0, 86, 170, 0.8);
 }
 
@@ -1001,60 +1003,29 @@
 }
 
 .depreciationBlock {
-  margin-top: 28px;
+  margin-top: 140px;
 }
 
 .depreciationGrid {
   margin-top: 14px;
   display: grid;
-  grid-template-columns: 320px 1fr;
-  gap: 22px;
-}
-
-.barList {
-  border-radius: 18px;
-  padding: 16px;
-  background: rgba(255, 255, 255, 0.65);
-  border: 1px solid rgba(0, 86, 170, 0.16);
-}
-
-.barItem {
-  display: grid;
-  grid-template-columns: 60px 1fr;
-  gap: 10px;
+  grid-template-columns: 480px 1fr;
+  gap: 32px;
   align-items: center;
-  margin-bottom: 10px;
 }
 
-.barItem__val {
-  font-weight: 900;
-  color: rgba(0, 86, 170, 0.7);
-}
-
-.barItem__bar {
-  height: 14px;
-  border-radius: 999px;
-  background: linear-gradient(135deg, rgba(0, 86, 170, 0.92), rgba(0, 120, 200, 0.75));
-}
-
-.barItem__bar--mid {
-  opacity: 0.9;
-}
-
-.barItem__bar--low {
-  opacity: 0.82;
-}
-
-.barSource {
-  margin-top: 10px;
-  font-size: 12px;
-  color: rgba(0, 86, 170, 0.6);
-  font-weight: 700;
+.depreciationChart {
+  border-radius: 16px;
 }
 
 .depreciationText {
   display: grid;
   gap: 10px;
+}
+
+.descContentText {
+  max-width: 624px;
+  padding-left: 35px;
 }
 
 .effectHero {
