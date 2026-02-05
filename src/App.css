@@ -1029,17 +1029,18 @@
 }
 
 .effectHero {
-  height: 380px;
+  width: 100%;
   border-radius: 0;
   border: 0;
-  background: linear-gradient(135deg, rgba(0, 86, 170, 0.14), rgba(0, 86, 170, 0.03));
 }
 
-.effectText {
-  margin-top: 10px;
-  display: grid;
-  gap: 8px;
-  max-width: 900px;
+.marketingGrid {
+  margin: 40px auto;
+  max-width: 1160px;
+}
+
+.titleMarket {
+  margin-bottom: 32px;
 }
 
 .caseStudy {
@@ -1054,12 +1055,14 @@
   display: grid;
   gap: 2px;
   margin-bottom: 12px;
+  margin-top: 4px;
 }
 
 .caseStudy__title {
   font-weight: 950;
   color: rgba(0, 86, 170, 0.95);
   margin: 0;
+  padding-left: 32px;
 }
 
 .caseStudy__sub {
@@ -1069,18 +1072,13 @@
 
 .metricRow {
   display: grid;
-  grid-template-columns: 44px 1fr;
-  gap: 12px;
+  grid-template-columns: 86px 1fr;
+  gap: 22px;
   padding: 12px 0;
-  border-top: 1px dashed rgba(0, 86, 170, 0.2);
 }
 
 .metricRow__icon {
-  width: 44px;
-  height: 44px;
-  border-radius: 12px;
-  background: linear-gradient(135deg, rgba(0, 86, 170, 0.16), rgba(0, 86, 170, 0.04));
-  border: 1px solid rgba(0, 86, 170, 0.16);
+  width: 100%;
 }
 
 .metricRow__title {
@@ -1090,14 +1088,20 @@
 }
 
 .metricRow__desc {
-  margin-top: 2px;
-  color: rgba(0, 86, 170, 0.7);
+  margin-left: 8px;
+  border-bottom: 1px dashed rgba(0, 86, 170, 0.2);
 }
-
+.authorBlock {
+  background: #E7F6FF;
+  padding: 34px;
+  border-bottom: 32px solid #0056AA;
+}
 .creditBox {
-  margin-top: 12px;
+  max-width: 1160px;
+  margin: 12px auto;
   padding-top: 12px;
-  border-top: 1px dashed rgba(0, 86, 170, 0.2);
+  padding-left: 32px;
+  border-left: 12px solid #0056AA;
   color: rgba(0, 86, 170, 0.7);
   font-weight: 600;
   display: grid;
@@ -1158,4 +1162,5 @@
   .coverageGrid { grid-template-columns: 1fr; }
   .interestGrid { grid-template-columns: 1fr; }
   .interestPhotos { grid-template-columns: 1fr; }
+  .marketingGrid { grid-template-columns: 1fr; }
 }

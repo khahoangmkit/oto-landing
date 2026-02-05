@@ -72,12 +72,10 @@ export default function CompanionOtoSection() {
               chuyên nghiệp để hoàn thành mỗi ngày 600 với điều kiện tốt nhất về cung đường người chạy cần từ 6-8 tiếng
               để hoàn thành chặng đường này.
               <br/>
-              <br/>
 
               Đây cũng là thông điệp nhóm sản xuất Hành Trình An Tâm muốn truyền tải tới người dùng, khách hàng có thể
               hoàn toàn yên tâm khi có những chiếc xe Geely làm bạn đồng hành. Về phía Tasco Auto, nhà phân phối cũng
               đang từng ngày để minh chứng hóa điều đó bằng hệ thống đại lý rộng khắp.
-              <br/>
               <br/>
 
               Bên cạnh đó, việc trước đây đã có nhiều thương hiệu xe Trung Quốc vào Việt Nam nhưng đều bỏ dở, để lại nỗi
