@@ -2,10 +2,14 @@ import Reveal from '../components/Reveal'
 import sellerTitle from '../assets/hanh-trinh-title.png'
 import colChart from '../assets/col-chart.png'
 import avatar3 from '../assets/avt3.png'
+import bgFull from "../assets/VectorFull.png";
 
 export default function SellerBoostSection() {
   return (
-    <section className="section">
+    <section className="section" style={{position: 'relative'}}>
+      <div className="backgroundAbsoluteFull">
+        <img src={bgFull} style={{height: '1200px'}} className='wFull' alt=""/>
+      </div>
 
       <div className="container1440">
         <div className="sellerIntro">

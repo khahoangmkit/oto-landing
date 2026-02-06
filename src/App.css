@@ -15,7 +15,6 @@
 
 .hero {
   width: 100%;
-  min-height: 720px;
   position: relative;
 }
 
@@ -150,18 +149,16 @@
 
 .main {
   width: 100%;
+  background: radial-gradient(
+          120% 80% at 50% 20%,
+          #FFFFFF 0%,
+          #F6FBFF 40%,
+          #EAF6FF 100%
+  );
 }
 
 .section {
   padding: 44px 0;
-}
-
-.section--soft {
-  background: radial-gradient(1200px 400px at 50% 0%, rgba(0, 86, 170, 0.08) 0%, rgba(0, 86, 170, 0) 70%);
-}
-
-.section--alt {
-  background: linear-gradient(180deg, #f5fbff 0%, #ffffff 100%);
 }
 
 .sectionTitle {
@@ -382,10 +379,42 @@
 }
 
 .expertAltGrid {
+  position: relative;
   display: grid;
   grid-template-columns: 1fr 420px;
   gap: 34px;
   align-items: center;
+}
+.backgroundAbsolute {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  object-fit: cover;
+  object-position: top;
+  z-index: 0;
+}
+
+.backgroundAbsoluteFull {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  object-fit: cover;
+  object-position: top;
+  z-index: 0;
+}
+
+.backgroundAbsoluteBottom {
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: 288px;
+  object-fit: cover;
+  object-position: top;
+  z-index: 0;
 }
 
 .expertAltContent {

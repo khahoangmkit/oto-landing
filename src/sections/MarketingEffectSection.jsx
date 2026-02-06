@@ -4,18 +4,22 @@ import titleImg from '../assets/marketTitle.png'
 import icon1 from '../assets/icon1-1.png'
 import icon2 from '../assets/icon1-2.png'
 import icon3 from '../assets/icon1-3.png'
+import bgTop from '../assets/Vectortop.png'
 
 export default function MarketingEffectSection() {
   return (
-    <section className="section" style={{paddingBottom: '0'}}>
-
+    <section className="section" style={{paddingBottom: '0', position: 'relative'}}>
+      <Reveal>
+        <div className="effectHero">
+          <img src={bannerHero} className='wFull' alt="banner"/>
+        </div>
+      </Reveal>
+      <div className="backgroundAbsoluteBottom">
+        <img src={bgTop} style={{height: '836px'}} className='wFull' alt=""/>
+      </div>
 
       <div className="container1440">
-        <Reveal>
-          <div className="effectHero">
-            <img src={bannerHero} alt="banner"/>
-          </div>
-        </Reveal>
+
 
         <div className="marketingGrid">
           <div className="titleMarket">
