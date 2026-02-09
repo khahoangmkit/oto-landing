@@ -1193,3 +1193,235 @@
   .interestPhotos { grid-template-columns: 1fr; }
   .marketingGrid { grid-template-columns: 1fr; }
 }
+
+@media (max-width: 768px) {
+  .container1440 {
+    padding: 0 16px;
+  }
+
+  /* Typography adjustments */
+  .hero__title { font-size: 32px; }
+  .sectionHeading { font-size: 24px; }
+  .bigTitle { font-size: 32px; }
+  .eventTitle { font-size: 32px; }
+  .coverageTitle { font-size: 32px; }
+  .marketTitle { font-size: 32px; }
+  .paragraph { text-align: left; }
+
+  /* EventSection overrides */
+  .eventIntro__left {
+    padding-left: 0 !important;
+  }
+  .eventIntro__right {
+    width: 100% !important;
+  }
+  .eventIntro__right .paragraph {
+    margin-left: 0 !important;
+    width: 100% !important;
+  }
+  .eventQuote {
+    padding: 32px 20px;
+    width: 100%;
+  }
+
+  /* ExpertMKTSection overrides */
+  .contentCenter {
+    width: 100% !important;
+    padding-top: 0 !important;
+  }
+
+  /* SummarySection overrides */
+  .summaryImageBlockDouble {
+    flex-direction: column;
+  }
+  .summaryImageHalf {
+    width: 100%;
+  }
+
+  /* MarketContextSection overrides */
+  .marketContext__text {
+    flex-direction: column;
+  }
+  .marketContext__text > div {
+    padding-left: 0 !important;
+  }
+  .contentBoiCanh {
+    width: 100%;
+    padding-left: 0;
+  }
+  .vennCaption {
+    width: 100%;
+  }
+
+  /* CoverageSection overrides */
+  .coverageGrid {
+    flex-direction: column;
+    padding-left: 0;
+    gap: 32px;
+  }
+  .coverageText {
+    width: 100%;
+  }
+
+  /* InterestSection overrides */
+  .interestGrid {
+    flex-direction: column;
+    padding-left: 0;
+  }
+  .interestText {
+    width: 100%;
+  }
+  .interestPhotos {
+    flex-direction: column;
+  }
+  .interestPhotos__item {
+    height: auto;
+    width: 100%;
+  }
+
+  /* ExpertMKTAltSection overrides */
+  .expertQuote {
+    width: 100%;
+    padding-left: 0;
+  }
+  
+  /* ModelBlock overrides (safe-guard) */
+  .modelBlock__grid,
+  .modelBlock__row {
+    grid-template-columns: 1fr;
+  }
+
+  /* SellerBoostSection overrides */
+  .sellerStats {
+    padding-left: 0;
+  }
+  .sellerText {
+    width: 100%;
+  }
+  .sellerTextFullWidth {
+    width: 100%;
+  }
+  .sellerQuote {
+    margin-top: 24px;
+    gap: 32px;
+  }
+  .quoteBox {
+    padding-left: 0;
+    width: 100%;
+  }
+  .sellerSpeaker__photo {
+    height: 300px;
+  }
+
+  /* ConsumerDemandSection overrides */
+  .demandText {
+    width: 100%;
+    padding-left: 0;
+  }
+  .demandIllustration {
+    padding-left: 0;
+  }
+  .smallNote {
+    width: 100%;
+  }
+  .descContentText {
+    padding-left: 0;
+  }
+
+  /* MarketingEffectSection overrides */
+  .caseStudy__title {
+    padding-left: 0;
+  }
+  .creditBox {
+    border-left: 4px solid #0056AA;
+    padding-left: 16px;
+  }
+  .authorBlock {
+    padding: 24px 16px;
+  }
+  
+  /* General image fixes */
+  img {
+    max-width: 100%;
+    height: auto;
+  }
+  
+  /* Background fix */
+  .backgroundAbsoluteFull, 
+  .backgroundAbsolute, 
+  .backgroundAbsoluteBottom {
+    display: none; /* Hide complex backgrounds on mobile for cleaner look or adjust height */
+  }
+
+  /* CompanionOtoSection overrides */
+  .companionText {
+    padding-left: 0;
+    max-width: 100%;
+  }
+  .textContentNum {
+    padding-left: 0;
+    width: 100%;
+  }
+  .listImageBlock {
+    flex-direction: column;
+    gap: 12px;
+  }
+  
+  /* Gallery overrides for mobile */
+  .galleryGrid {
+    grid-template-columns: 1fr;
+  }
+
+  /* Font size adjustments */
+  .miniCard__value {
+    font-size: 48px;
+  }
+  .summaryCard__value {
+    font-size: 42px;
+  }
+  .statPill__value {
+    font-size: 28px;
+  }
+  
+  /* Section padding adjustment */
+  .section {
+    padding: 32px 0;
+  }
+
+  /* Badge adjustments */
+  .demandBadge {
+    padding: 10px 12px;
+    left: 12px;
+    bottom: 12px;
+  }
+  .demandBadge__label {
+    font-size: 12px;
+  }
+  .demandBadge__value {
+    font-size: 24px;
+  }
+  
+  .expertTag {
+    padding: 10px 12px;
+    left: 12px;
+    right: 12px;
+    bottom: 12px;
+  }
+  .expertName {
+    font-size: 18px;
+  }
+  
+  /* Chart adjustments */
+  .imageChart {
+    position: static;
+    margin-bottom: 24px;
+  }
+
+  /* Hero overrides */
+  .hero, .hero__overlay {
+    min-height: auto;
+  }
+  .hero__img {
+    height: auto;
+  }
+}
