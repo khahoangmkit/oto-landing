@@ -1,4 +1,4 @@
-import bgHome from '../assets/bg-home.png';
+import bgHome from '../assets/bg-home1.png';
 
 
 export default function HeroSection() {
